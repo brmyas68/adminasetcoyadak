@@ -1,0 +1,34 @@
+@import '~antd/dist/antd.css';
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base {
+  @font-face {
+      font-family: IRANYekanFNBold ;
+      src: url('/assets/fonts/IRANYekanBoldFaNum.ttf');
+    }
+    @font-face {
+      font-family: IRANYekanFNMedium ;
+      src: url('/assets/fonts/IRANYekanMediumFaNum.ttf');
+    }
+    @font-face {
+      font-family: IRANYekanFN ;
+      src: url('/assets/fonts/IRANYekanRegularFaNum.ttf');
+    }
+     
+  body {
+        font-family:IRANYekanFN;
+        background-color: #FAFAFA;
+   }
+}
+
+@layer components {
+  .flexCenter {
+    @apply flex justify-center items-center;
+  }
+}
